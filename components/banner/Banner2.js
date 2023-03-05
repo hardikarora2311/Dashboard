@@ -2,9 +2,21 @@ import React from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
+import Lottie from "react-lottie";
+// import animationData from "../../assets/images/landingpage/study.json";
+import animationData from "../../assets/images/landingpage/college.json";
 import bannerimg from "../../assets/images/landingpage/banner-img.png";
 
 const Banner2 = () => {
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="static-slider-head banner2">
       <Container>
@@ -29,7 +41,8 @@ const Banner2 = () => {
             </Link>
           </Col>
           <Col lg="6" md="6">
-            <Image src={bannerimg} alt="hero banner" />
+            {/* <Image src={bannerimg} alt="hero banner" /> */}
+            <Lottie options={defaultOptions} height={460} width={580} />;
           </Col>
         </Row>
       </Container>
