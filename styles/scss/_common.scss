@@ -59,7 +59,8 @@ Header 6
 }
 
 .static-slider-head {
-  min-height: 600px;
+  // min-height: 600px;
+  height: 100vh;
   display: flex;
 
   background-color: #607df9;
