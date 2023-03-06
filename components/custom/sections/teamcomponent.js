@@ -10,7 +10,7 @@ const TeamComponent = () => {
                     <Row className="justify-content-center">
                         <Col md="7" className="text-center">
                             <h1 className="title font-bold">Team</h1>
-                            <h6 className="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto corporis quisquam consequatur reprehenderit ipsa nulla illo perspiciatis iste in est quis fugit, distinctio accusantium maxime rerum. Porro molestias eveniet labore.</h6>
+                            <h6 className="subtitle">Our team is spread across 5 countries including top institutes like The Imperial College London,St.Stephens,SRCC,IIt's.IIM's,NMIIMS,Manchester University,The Doon School,St. George's College and many more....</h6>
                         </Col>
                     </Row>
                 </Container>
