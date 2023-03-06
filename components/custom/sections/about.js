@@ -12,9 +12,9 @@ const about = () => {
             <Image src={bannerimg} className='service-photo' alt="hero banner" />
             <div className="about-main-text">
                 <h3>Who Are We?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laboriosam sit labore, non consequuntur atque qui velit, quaerat laudantium quae provident optio alias dolorum officiis excepturi repellendus natus totam minus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laboriosam sit labore, non consequuntur atque qui velit, quaerat laudantium quae provident optio alias dolorum officiis excepturi repellendus natus totam minus!</p>
-
+                <p>Carrer Wings is a <strong>student</strong> driven company.</p>
+                <p>We assist students in their drive towards a <strong>stringer profile</strong> by providing guarenteed internships and opportunities through our company partnerships.</p>
+                <p>Guarenteed internships, <strong>holistic packages</strong>,connections with industry leaders and more...</p>
             </div>
         </div>
 
