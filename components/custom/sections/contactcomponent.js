@@ -72,12 +72,12 @@ const ContactComponent = () => {
                   <div className="detail-box p-40 bg-info">
                     <h2 className="text-white">Career Wings Headquarters</h2>
                     <p className="text-white m-t-30 op-8">
-                      251 546 9442
-                      <br /> abc@gmail.com
+                    +9174170 76725
+                      <br /> careerwings.edu.in@gmail.com
                     </p>
                     <p className="text-white op-8">
-                      601 Sherwood Ave.
-                      <br /> San Bernandino, CA 92404
+                     Dehradun
+                      <br /> Uttarakhand
                     </p>
                   </div>
                 </Col>

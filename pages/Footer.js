@@ -10,13 +10,13 @@ const Footer = () => {
         <Row>
           <Col lg="3" md="6" className="m-b-30">
             <h5 className="m-b-20">Address</h5>
-            <p>71 Amsteroum Avenue Cronish Night, NY 35098</p>
+            <p>Dehradun,Uttarakhand</p>
           </Col>
           <Col lg="3" md="6" className="m-b-30">
             <h5 className="m-b-20">Phone</h5>
             <p>
-              Reception : +205 123 4567 <br />
-              Office : +207 235 7890
+              Reception : +9174170 76725 <br />
+              Office : +9174170 76725
             </p>
           </Col>
           <Col lg="3" md="6" className="m-b-30">
@@ -24,11 +24,11 @@ const Footer = () => {
             <p>
               Office :
               <Link href="#">
-                <a className="link">careerwings.com</a>
+                <a className="link">careerwings.edu.in@gmail.com</a>
               </Link>
               <br />
               Site :
-              <Link href="https://www.wrappixel.com">
+              <Link href="/">
                 <a className="link">careerwings.com</a>
               </Link>
             </p>
