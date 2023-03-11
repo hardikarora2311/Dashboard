@@ -1,12 +1,34 @@
-import React from 'react'
+import React,  { useState }from 'react'
 import Image from "next/image"
 import Link from 'next/link'
 import { ImFacebook2 } from 'react-icons/im';
 import { ImGoogle2 } from 'react-icons/im';
 import { ImLinkedin2 } from 'react-icons/im';
+import { useRouter } from 'next/router';
 
 
 const Login = () => {
+    const router=useRouter();
+    const [Email, setEmail] = useState();
+    const [pass, setPass] = useState();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const data = { Email, pass }
+        let res = await fetch("http://localhost:3000/api/login", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        let response = await res.json()
+        console.log(response);
+        if(response.success)
+        {
+            router.push("http://localhost:3000")
+        }
+    }
     return (
         <div>            
             <section className=" mx-10 vh-100">
@@ -18,16 +40,16 @@ const Login = () => {
                     height="400px"layout='responsive' /> }
                     </div>
                     <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1" style={{top: "50px"}}>
-                        <form>
+                        <form onSubmit={handleSubmit} method='POST'>
                             <div className="form-outline mb-4">
                             <label className="form-label" htmlFor="E-mail">Email address</label>
-                                <input type="email" id="e-mail" className="form-control form-control-lg"
+                                <input onChange={(e)=>{setEmail(e.target.value)}} type="email" id="e-mail" className="form-control form-control-lg"
                                     placeholder="Enter a valid email address" />
                             </div>
 
                             <div className="form-outline mb-3">
                             <label className="form-label" htmlFor="Passwrd">Password</label>
-                                <input type="password" id="password" className="form-control form-control-lg"
+                                <input onChange={(e)=>{setPass(e.target.value)}} type="password" id="password" className="form-control form-control-lg"
                                     placeholder="Enter password" />
                             </div>
 
@@ -42,7 +64,7 @@ const Login = () => {
                             </div>
 
                             <div className="text-center text-lg-start mt-4 pt-2">
-                                <button type="button" className="btn btn-primary btn-lg"
+                                <button type="submit" className="btn btn-primary btn-lg"
                                     style={{paddingleft: "2.5rem" ,paddingright: "2.5rem"}}>Login</button>
                                 <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <Link href="/Signup"
                                     className="link-danger">Register</Link></p>
