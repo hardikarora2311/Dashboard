@@ -29,12 +29,12 @@ const Banner2 = () => {
               Beat the Rat race.
             </h4>
             <a
-              href="https://wrappixel.com/templates/nextkit-nextjs-free-uikit"
+              href="/Signup"
               className="btn btn-danger m-r-20 btn-md m-t-30 "
             >
               Join Now
             </a>
-            <Link href="/#coming">
+            <Link href="/Signup">
               <a className="btn btn-md m-t-30  btn-outline-light ">
                 Join as a Mentor
               </a>

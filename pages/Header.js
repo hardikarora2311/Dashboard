@@ -12,7 +12,7 @@ import {
   Container,
   NavLink,
 } from "reactstrap";
-import logo from "../../assets/images/logos/logo-no-background.png";
+import logo from "../assets/images/logos/logo-no-background.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const Header = () => {
                   </Link>
                 </NavItem>
                 <NavItem>
-                  <Link href="/about">
+                  <Link href="/components/custom/sections/about">
                     <a
                       className={
                         router.pathname == "/about"
@@ -78,11 +78,11 @@ const Header = () => {
               </Nav>
               <div className="act-buttons">
                 <NavLink
-                  href="https://wrappixel.com/templates/nextkit-nextjs-free-uikit"
+                  href="/Login"
                   className="btn btn-light font-14"
-                  target="_blank"
+                  target="_self"
                 >
-                  Sign Up
+                  Login
                 </NavLink>
               </div>
             </Collapse>
