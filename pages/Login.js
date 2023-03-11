@@ -6,7 +6,7 @@ import { ImGoogle2 } from 'react-icons/im';
 import { ImLinkedin2 } from 'react-icons/im';
 
 
-const Signup = () => {
+const Login = () => {
     return (
         <div>            
             <section className=" mx-10 vh-100">
@@ -74,4 +74,4 @@ const Signup = () => {
     )
 }
 
-export default Signup;
+export default Login;
