@@ -49,7 +49,7 @@ const Signup = () => {
                     className="img-fluid" alt="Sample image" width="350px"
                     height="400px"layout='responsive' /> }
                         </div>
-                        <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1" style={{top: "100px"}}>
+                        <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1" style={{top: "50px"}}>
                             <form onSubmit={handleSubmit} method='POST'>
                                 <div className="form-outline mb-4">
                                 <label className="form-label" htmlFor="name">Name</label>
@@ -72,7 +72,7 @@ const Signup = () => {
                                         style={{ paddingleft: "2.5rem", paddingright: "2.5rem" }}>Signup</button>
                                 </div>
                                 <div>
-                                <p style={{paddingTop:"30px",paddingLeft: "240px"}}> <strong>Or</strong></p>
+                                <p style={{paddingTop:"10px",paddingLeft: "235px"}}> <strong>Or</strong></p>
                             </div>
                             <div>
                                 <p style={{paddingLeft: "210px"}}>Sign in with</p>
