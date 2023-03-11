@@ -1,6 +1,5 @@
 import Header from "../pages/Header";
 import Footer from "../pages/Footer";
-
 const Layout = ({ children }) => {
   return (
     <div id="main-wrapper">
